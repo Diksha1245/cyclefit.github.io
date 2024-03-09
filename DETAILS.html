@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            padding: 100px;
+            margin: 100px;
+        }
+        .con {
+            width: 300px;
+            margin: 0 auto;
+            margin-top: 100px;
+            position: relative;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            color: black;
+        }
+        .custom {
+            position: relative;
+            display: inline-block;
+        }
+        .custom select {
+            width: 100%;
+            padding: 10px;
+            margin:10px 0;
+            border: 1px solid black;
+            border-radius: 5px;
+            box-sizing: border-box;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-color: lightgoldenrodyellow;
+            background-position: right 10px;
+        }
+        input[type="submit"] {
+
+            background-color: pink;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <h2>Enter Details</h2>
+        <h3>Basic Details:</h3>
+        <form>
+            <div class="custom">
+                <label for="age">Age:</label>
+                <select id="age" name="age"></select>
+            </div>
+
+            <div class="custom">
+                <label for="height">Height:</label>
+                <select id="height" name="height"></select>
+            </div>
+
+            <div class="custom">
+                <label for="weight">Weight:</label>
+                <select id="weight" name="weight"></select>
+            </div>
+
+        </form>
+        <h3>Period Symptoms:</h3>
+        <form>
+            <div class="ron">
+            <input type="checkbox" id="sym1" value="Cramps">
+            <label for="sym1">Cramps</label><br>
+            <input type="checkbox" id="sym2" value="Mood Swings">
+            <label for="sym2">Mood Swings</label><br>
+            <input type="checkbox" id="sym3" value="Bloating">
+            <label for="sym3">Bloating</label><br>
+            <input type="checkbox" id="sym4" value="Headache">
+            <label for="sym4">Headache</label><br>
+            <input type="checkbox" id="sym5" value="Fatigue">
+            <label for="sym5">Fatigue</label><br>
+            <input type="checkbox" id="sym6" value="Back pain">
+            <label for="sym6">Back pain</label><br>
+            <input type="checkbox" id="sym7" value="Trouble sleeping">
+            <label for="sym7">Trouble sleeping</label>
+            
+            </div><br>
+            
+        </form>
+        <h3>Period Pain Tracker:</h3>
+        <form action="track_pain.php" method="post">
+            <label for="painLevel">How severe is your period pain?</label>
+            <input type="range" id="painLevel" name="painLevel" min="0" max="10" value="5" oninput="updatePainValue(this.value)">
+            <div id="painValue">Pain Level: 5</div>
+            
+        </form>
+        <script>
+            function updatePainValue(value) {
+                document.getElementById("painValue").textContent = "Pain Level: " + value;
+            }
+        </script><br>
+        <input type="submit" value="PROCEED">
+        
+    </div>
+
+    <script>
+        function populateOptions(selectElement, startValue, endValue) {
+            for (var i = startValue; i <= endValue; i++) {
+                var option = document.createElement("option");
+                option.text = i;
+                option.value = i;
+                selectElement.add(option);
+            }
+        }
+        
+        populateOptions(document.getElementById("age"), 10, 100);
+
+        populateOptions(document.getElementById("height"), 125, 200);
+
+        populateOptions(document.getElementById("weight"), 40, 100);
+    </script>
+</body>
+</html>
