@@ -17,21 +17,22 @@
                 <li><a href="#home">Home</a></li> 
                 <li><a href="#exploremore">About</a></li> 
                 <li><a href="#boxcard">Track</a></li> 
-                <li><a href="#reservation">Sign IN</a></li> 
+                <li><a href="signup.html">SignIn</a></li> 
                 <li><a href="#contact">Contact</a></li> 
             </ul> 
         </nav> 
     </header>
      <div class="container">
-        <video autoplay loop muted plays-inline class="background-clip">
-            <source src="VID-20240220-WA0004.mp4" type="video/mp4">
-        </video>
+            <img class="welcomeimage" src="Workout-amico.png" alt="illustration">
         <div class="content">
             <h1>
                 <div class="content">
                     <h1>
-                        <span class="auto-input">CycleFit</span>
+                        Cycle<span class="pink">Fit</span>
                     </h1>
+                    <p>
+                        Your Body is Your Temple
+                    </p>
                 </div>
                 
             </h1>
@@ -39,7 +40,7 @@
         </div>
     </div>
     <button id="open-chatbot" onclick="toggleChatbot()">
-        <img src="Chatbot.jpg" alt="Chatbot">
+        <img src="Chatbot.png" alt="Chatbot">
     </button>
     
     <div id="chatbot-container">
@@ -55,111 +56,26 @@
 
     <button id="scroll-down-button">&darr;</button>
     <section id="exploremore">
-        <img src="image6.jpg">
+        <img src="about.png" class="aboutimg">
         <div class="text">
         <h1>
-            Experience Unforgettable Moments 
+            CycleFit 
         </h1>
         <p>
-            The epitome of coastal dining excellence nestled along the picturesque East Coast Road (ECR) in the heart of Mahabalipuram. Whether you're planning a birthday celebration, a romantic dinner, a leisurely lunch, or simply looking for a vibrant restaurant and bar, Marmoris offers it all, right at the doorstep of Mahabalipuram's iconic attractions.
+            CycleFit is a mobile app offering personalized workout routines and nutritional guidance tailored to women's menstrual cycles. Track your cycle, get customized workouts, and join a supportive community to optimize your fitness journey.
+
         </p>
     </div>
     </section>
-    <section id="boxcard">
-        <div class="menu" id="starters">
-            <img src="starter.jpg" alt="Starter Image">
-
-            <h2>Starters</h2>
-
-          </div>
-          <div class="menu" id="main-course">
-            
-            <img src="maincourse.jpg" alt="Starter Image">
-            <h2>Main Course</h2>
-
-          </div>
-          <div class="menu" id="dessert">
-            
-            <img src="dessert.jpg" alt="Starter Image">
-            <h2>Dessert</h2>
-
-          </div>
-    </section>
-    <section id="reservation">
-        <h2>
-            RESERVATION
-        </h2>
-        <form id="tableReservationForm" onsubmit="return validateForm()">
-            <h2>Table Reservation Form</h2>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-          
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          
-            <label for="phone">Phone</label>
-            <input type="tel" id="phone" name="phone" required>
-          
-            <label for="date">Date</label>
-            <input type="date" id="date" name="date" required>
-          
-            <label for="time">Time</label>
-            <input type="time" id="time" name="time" required>
-
-            <label for="people">No of People</label>
-            <input type="people" id="people" name="people" required>
-          
-            <input type="submit" value="Submit">
-    </section>
-    <section id="slideshow" data-component="slideshow">
-        <button id="#prevBtn" onclick="prevSlide()">&#10094;</button>
-        <div role="list">
-
-
-        <div class="slide active">
-          <img src="image1.jpg" alt="Image 1">
-          <div class="caption">Image 1</div>
-        </div>
-        <div class="slide">
-          <img src="image2.jpg" alt="Image 2">
-          <div class="caption">Image 2</div>
-        </div>
-        <div class="slide">
-            <img src="image3.jpg" alt="Image 3">
-            <div class="caption">Image 2</div>
-          </div>
-          <div class="slide">
-            <img src="image4.jpg" alt="Image 4">
-            <div class="caption">Image 2</div>
-          </div>
-          <div class="slide">
-            <img src="image5.jpg" alt="Image 5">
-            <div class="caption">Image 2</div>
-          </div>
-          <div class="slide">
-            <img src="image6.jpg" alt="Image 6">
-            <div class="caption">Image 2</div>
-          </div>
-          <div class="slide">
-            <img src="image7.jpg" alt="Image 7">
-            <div class="caption">Image 2</div>
-          </div>
-          <button id="#nextBtn" onclick="nextSlide()">&#10095;</button>
-
-          </div>
-
-      </section>
-      
-
       <section id="contact" class="footer"> 
         <h2>Contact</h2> 
         <div class="footer"> 
             <p>Feel free to reach out to me:</p> 
             <ul class="contact123"> 
-                <li><i class="fas fa-envelope"></i> <a href="mailto:your.email@example.com">marmois@gmail.com</a></li> 
+                <li><i class="fas fa-envelope"></i> <a href="mailto:your.email@example.com">cyclefit@gmail.com</a></li> 
                 <li><i class="fas fa-phone"></i> <a href="tel:+1234567890">+1 (234) 567-890</a></li> 
-                <li><i class="fab fa-facebook-f"></i> <a href="https://facebook.com/yourusername" target="_blank">Marmois</a></li> 
-                <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/yourusername" target="_blank">MarmoisInsta</a></li>  
+                <li><i class="fab fa-facebook-f"></i> <a href="https://facebook.com/yourusername" target="_blank">Cyclefit</a></li> 
+                <li><i class="fab fa-instagram"></i> <a href="https://instagram.com/yourusername" target="_blank">Cyclefit</a></li>  
             </ul> 
         </div> 
     </section>
@@ -167,8 +83,8 @@
    
     
 
-    <script>
- 
+<script>
+     
 
 
 document.getElementById('scroll-down-button').addEventListener('click', function() {
@@ -248,50 +164,16 @@ document.addEventListener('DOMContentLoaded', function() {
     function botResponse(message) {
         // Basic bot responses
         const responses = {
-            'hi': 'Hello! Welcome to our restaurant. How can I assist you?',
-        'hello': 'Hi there! How can we help you today?',
-        'menu': 'You can view our menu on our website: [menu link]',
-        'reservation': 'To make a reservation, please visit our reservation page: [reservation link]',
-        'opening hours': 'Our restaurant is open from [opening time] to [closing time] every day.',
-        'location': 'We are located at [restaurant address].',
-        'specials': 'Check out our daily specials for delicious dishes!',
-        'contact': 'You can contact us at [phone number] or email us at [email address].',
-        'recommendation': 'I recommend trying our [popular dish]. It\'s a customer favorite!',
-        'thank you': 'You\'re welcome! If you need anything else, feel free to ask.',
-        'reservation process': 'To make a reservation, simply visit our website and fill out the reservation form.',
-        'happy hour': 'Join us for happy hour every weekday from [happy hour start time] to [happy hour end time] for discounted drinks and appetizers!',
-        'private events': 'We offer private event bookings for special occasions. Please contact us for more information.',
-        'vegan options': 'We have a variety of delicious vegan options available on our menu. Just ask your server!',
-        'gluten-free options': 'We offer gluten-free alternatives for many of our menu items. Please inform your server of any dietary restrictions.',
-        'kids menu': 'Check out our kids menu for tasty and nutritious options for the little ones.',
-        'chef\'s specials': 'Our chef\'s specials feature unique and seasonal dishes crafted with care by our talented chefs.',
-        'weekly promotions': 'Stay tuned for our weekly promotions, featuring discounts on select menu items!',
-        'catering services': 'We provide catering services for events of all sizes. Contact us to discuss your catering needs.',
-        'loyalty program': 'Join our loyalty program to earn rewards and exclusive offers with every visit!',
-        'wine selection': 'Explore our extensive wine selection, featuring a variety of reds, whites, and rosés from around the world.',
-        'happy birthday': 'Happy birthday! Celebrate your special day with us and enjoy a complimentary dessert on the house.',
-        'anniversary celebration': 'Celebrate your anniversary with us and create lasting memories over a delicious meal.',
-        'takeout options': 'Enjoy our delicious food from the comfort of your home with our convenient takeout options.',
-        'delivery service': 'Can\'t make it to the restaurant? We offer delivery service to bring our tasty dishes straight to your door.',
-        'holiday hours': 'Please note our special holiday hours during the festive season. Check our website for details.',
-        'live entertainment': 'Join us for live entertainment every [day of the week], featuring talented musicians and performers.',
-        'customer feedback': 'We value your feedback! Let us know about your dining experience by completing our online survey.',
-        'gift cards': 'Give the gift of great food with our restaurant gift cards, available for purchase in-store or online.',
-        'community events': 'Stay involved with our community events and fundraisers supporting local causes.',
-        'cocktail menu': 'Explore our cocktail menu for expertly crafted drinks made with premium spirits and fresh ingredients.',
-        'weekly specials': 'Don\'t miss out on our weekly specials, featuring seasonal ingredients and culinary creativity.',
-        'dine-in experience': 'Experience exceptional service and a warm atmosphere when you dine in with us.',
-        'outdoor seating': 'Enjoy al fresco dining on our outdoor patio, perfect for soaking up the sunshine.',
-        'private dining rooms': 'Host your next private event in one of our elegant dining rooms, perfect for special occasions.',
-        'takeout discounts': 'Get 10% off your first takeout order when you sign up for our newsletter!',
-        'birthday party': 'Celebrate your birthday with us and enjoy a special treat from our kitchen.',
-        'anniversary dinner': 'Plan a romantic anniversary dinner with us and savor each moment together.',
-        'group reservations': 'Planning a group outing? Contact us to make reservations for parties of six or more.',
-        'happy hour specials': 'Join us for happy hour and enjoy discounted drinks and appetizers!',
-        'weekly events': 'Discover our weekly events, including trivia nights, live music, and more.',
-        'holiday promotions': 'Celebrate the holidays with us and enjoy special promotions and festive menus.',
-        'takeout options': 'Order online for easy takeout or delivery straight to your doorstep.',
-        'customer service': 'Our team is here to assist you with any questions or concerns you may have.',
+            "hi": "Hello! Welcome to CycleFit: Empowering Women's Health and Fitness. How can we assist you today?",
+  "hello": "Hi there! Welcome to CycleFit. How can we help you make the most of your fitness journey?",
+  "features": "CycleFit offers personalized workout routines and nutritional guidance tailored to your menstrual cycle. You can track your cycle, get customized workouts, and join a supportive community to optimize your fitness journey.",
+  "workouts": "Our app recommends workout routines that align with your menstrual phase, energy levels, and physical symptoms. From high-intensity interval training to gentle yoga sessions, we've got you covered.",
+  "nutrition": "Get personalized dietary recommendations to support your health and wellness goals. From anti-inflammatory foods to hormone-balancing nutrients, we'll help you make informed choices about your diet.",
+  "tracking": "Track your menstrual cycles, symptoms, workouts, and nutrition within the app. Monitor your progress and make informed decisions about your health and fitness journey.",
+  "expert advice": "Access expert advice from certified fitness trainers and nutritionists who specialize in women's health. Learn more about menstrual health and fitness from our educational content and resources.",
+  "community": "Join our supportive community of women to connect, share experiences, and motivate each other on your fitness journey. From workout challenges to recipe swaps, we're here to support you!",
+  "thank you": "You're welcome! If you have any more questions or need assistance, feel free to ask. We're here to help you achieve your fitness goals with CycleFit!",
+
            
         };
 
@@ -317,5 +199,6 @@ let chatbotOpen = false;
             }
         }
 
-    </script>
+
+</script>
 </body>
